@@ -1,0 +1,18 @@
+@import './about/header';
+@import './about/main';
+@import './about/footer';
+@import './about/mixins';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @extend %font_family;
+}
+
+.container{
+    max-width: 1840px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

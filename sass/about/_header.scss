@@ -1,0 +1,122 @@
+@import './mixins';
+
+body{
+    height: 100vh;
+    @include display_center;
+    
+    background-color: #18222c;
+}
+
+.card{
+    background-color: #2A3C4E;
+    padding: 50px 195px;
+    border-radius: 50px;
+
+    .card__btn{
+        margin-top: 30px;
+        button{
+            padding: 10px 32px;
+            background-color: #30CC8A;
+            color: #FFF;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                color: #30CC8A;
+                border: 2px solid #30CC8A;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.card__top{
+    .card__links{
+    border-bottom: 1px solid gray;
+    }
+    .card__top--title{
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 52px;
+        color: #FFF;
+        margin-bottom: 30px;
+    }
+    .card__list{
+        @include display_center;
+        gap: 0 50px;
+        list-style: none;
+        margin-bottom: 10px;
+
+    }
+    .card__link{
+        text-decoration: none;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        &:hover{
+            padding-bottom: 10px;
+            color: #46DBBF;
+            border-bottom: 3px solid #46DBBF;
+        }
+    }    
+}
+
+
+.form{
+    padding-top: 50px;
+    color: $white;
+    
+    .form1{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+
+
+        input{
+            margin-top: 8px;
+            height: 50px;
+            width: 450px;
+            background-color: #54687C80;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: $white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    }
+
+    .form2{
+        input{
+            margin-top: 8px;
+            height: 50px;
+            width: 100%;
+            background-color: #54687C80;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: $white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    }
+
+    .form5{
+        @include display_center;
+        gap: 0 30px;
+
+        input{
+            margin-top: 8px;
+            height: 50px;
+            width: 690px;
+            background-color: #54687C80;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: $white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    }
+}
